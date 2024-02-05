@@ -10,7 +10,7 @@ class NavBar extends StatelessWidget {
       iconSize: 34,
       currentIndex: _selectedIconBar,
       backgroundColor: const Color(0xff024272),
-      selectedItemColor: Colors.white,
+      selectedItemColor: Colors.amber,
       unselectedItemColor: Colors.white,
       selectedFontSize: 14.0,
       unselectedFontSize: 12.0,
@@ -18,23 +18,23 @@ class NavBar extends StatelessWidget {
       type: BottomNavigationBarType.fixed,
       items: [
         BottomNavigationBarItem(
-          icon: SvgPicture.asset('images/book.svg'),
+          icon: SvgPicture.asset('Images/HomeIcon.png'),
           label: 'Home',
         ),
         BottomNavigationBarItem(
-          icon: SvgPicture.asset('images/book.svg'),
+          icon: SvgPicture.asset('Images/book.svg'),
           label: 'News',
         ),
         BottomNavigationBarItem(
-          icon: SvgPicture.asset('images/Events Icon.svg'),
+          icon: SvgPicture.asset('Images/Events Icon.svg'),
           label: 'Events',
         ),
         BottomNavigationBarItem(
-          icon: SvgPicture.asset('images/people.svg'),
+          icon: SvgPicture.asset('Images/people.svg'),
           label: 'Boards',
         ),
         BottomNavigationBarItem(
-          icon: SvgPicture.asset('images/Awards Icon.svg'),
+          icon: SvgPicture.asset('Images/Awards Icon.svg'),
           label: 'Awards',
         ),
       ],
