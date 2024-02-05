@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 
 class NavBar extends StatelessWidget {
   const NavBar({super.key});
-  final int _selectedIconBar = 0;
+  final int _selectedIconBar = 3;
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
@@ -14,11 +14,14 @@ class NavBar extends StatelessWidget {
       unselectedItemColor: Colors.white,
       selectedFontSize: 14.0,
       unselectedFontSize: 12.0,
-      showSelectedLabels: false,
+      showSelectedLabels: true,
       type: BottomNavigationBarType.fixed,
       items: [
-        BottomNavigationBarItem(
-          icon: SvgPicture.asset('Images/HomeIcon.png'),
+        const BottomNavigationBarItem(
+          icon: ImageIcon(
+            AssetImage('Images/HomeIcon.png'),
+            size: 50,
+          ),
           label: 'Home',
         ),
         BottomNavigationBarItem(
