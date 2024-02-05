@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Model extends StatelessWidget {
-  String? name;
-  String? position;
-  String? imgPath;
-  Model(
+  final String? name;
+  final String? position;
+  final String? imgPath;
+  const Model(
       {super.key,
       required this.name,
       required this.position,
@@ -21,13 +21,17 @@ class Model extends StatelessWidget {
               alignment: Alignment.center,
               height: 90,
               width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                color: const Color(0xff024272),
+                borderRadius: BorderRadius.circular(30),
+              ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     "$name",
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Colors.white,
                         fontSize: 24,
                         fontWeight: FontWeight.w500,
@@ -42,7 +46,7 @@ class Model extends StatelessWidget {
                   ),
                   Text(
                     "$position",
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Color.fromRGBO(255, 193, 61, 0.85),
                         fontSize: 16,
                         fontWeight: FontWeight.w400,
@@ -55,10 +59,6 @@ class Model extends StatelessWidget {
                         ]),
                   )
                 ],
-              ),
-              decoration: BoxDecoration(
-                color: Color(0xff024272),
-                borderRadius: BorderRadius.circular(30),
               ),
             ),
             Positioned(
